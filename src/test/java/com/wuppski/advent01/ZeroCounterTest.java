@@ -4,29 +4,28 @@ import com.wuppski.FileReader;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.net.URISyntaxException;
 import java.util.List;
 
 
 public class ZeroCounterTest {
 
     @Test
-    public void testProblem1( ) throws URISyntaxException {
+    public void testProblem1( ) {
         List<String> inputData = FileReader.readFile("/01-input.txt");
 
         ZeroCounter zc1 = new ZeroCounter(false);
         zc1.calculateCount(inputData);
 
-        System.out.printf("Count1 is %d%n", zc1.getZeroCount() );
+//        System.out.printf("Count1 is %d%n", zc1.getZeroCount() );
     }
 
     @Test
-    public void testProblem2( ) throws URISyntaxException {
+    public void testProblem2( ) {
         List<String> inputData = FileReader.readFile("/01-input.txt");
         ZeroCounter zc2 = new ZeroCounter(true);
         zc2.calculateCount(inputData);
 
-        System.out.printf("Count2 is %d%n", zc2.getZeroCount() );
+//        System.out.printf("Count2 is %d%n", zc2.getZeroCount() );
     }
 
     @Test

@@ -29,7 +29,7 @@ public class ZeroCounter {
         for ( String line : inputLines ) {
             int rotation = getRotationValue(line);
             singleLineCalc(rotation);
-            System.out.printf("T1 Read line %s, position %d, zeroCount %d%n", line, position, zeroCount);
+//            System.out.printf("T1 Read line %s, position %d, zeroCount %d%n", line, position, zeroCount);
         }
     }
 
